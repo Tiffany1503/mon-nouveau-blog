@@ -1,0 +1,58 @@
+h1 {
+    color: #010164;
+
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center; /* Centrer verticalement */
+}
+
+thead {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(30, 144, 255, 0.5);
+}
+
+
+.lien {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px; /* Ajoutez un espace autour du lien pour le rendre plus cliquable */
+}
+
+td {
+    border-bottom: 1px solid grey;
+    padding: 8px;
+}
+
+tbody td:nth-child(1) {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(1) td:first-child {
+    border: 2px solid #ffd700;
+    border-radius: 10px; /* Coins arrondis */
+    background-color: #ffd700; /* Remplissage en or avec une légère transparence */
+    padding: 1px;
+}
+
+/* Argent pour la deuxième place */
+tbody tr:nth-child(2) td:first-child {
+    border: 2px solid #c0c0c0;
+    border-radius: 10px; /* Coins arrondis */
+    background-color: #c0c0c0; /* Remplissage en argent avec une légère transparence */
+    padding: 1px;
+}
+
+/* Bronze pour la troisième place */
+tbody tr:nth-child(3) td:first-child {
+    border: 2px solid #cd7f32;
+    border-radius: 10px; /* Coins arrondis */
+    background-color: #cd7f32; /* Remplissage en bronze avec une légère transparence */
+    padding: 1px;
+}

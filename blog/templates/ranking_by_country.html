@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ranking_by_country.css' %}">
+    <title>Classement par pays</title>
+</head>
+<body>
+    <div class="tabs">
+        <a href="../airline"><button>Page principale</button></a>
+    </div>
+
+    <h1>Classement par pays</h1>
+
+    <div class="container">
+    <p>
+        <span class="ligne1">Vous souhaitez savoir quelle est la meilleure compagnie aérienne dans votre pays ou dans celui où vous souhaitez voyager ? </span><br>
+        <span class="ligne2">Choisissez dans la liste déroulante le pays concerné et retrouvez le top 3 des meilleures compagnies aériennes de ce pays.</span>
+    </p>
+
+    
+    <form id="paysForm">
+        <label for="pays">Choisissez un pays :</label>
+        <select id="pays" name="pays">
+            <option value="">Sélectionner un pays</option>
+            <option value="be"><a href="be.html">Belgique</a></option>
+            <option value="br">Bresil</option>
+            <option value="ca">Canada</option>
+            <option value="da">Danemark</option>
+            <option value="fr">France</option>
+            <option value="al">Allemagne</option>
+            <option value="gr">Grece</option>
+            <option value="ir">Irlande</option>
+            <option value="it">Italie</option>
+            <option value="ja">Japon</option>
+            <option value="me">Mexique</option>
+            <option value="pb">Pays-Bas</option>
+            <option value="no">Norvege</option>
+            <option value="pol">Pologne</option>
+            <option value="por">Portugal</option>
+            <option value="es">Espagne</option>
+            <option value="su">Suede</option>
+            <option value="tu">Turquie</option>
+            <option value="eau">Emirats Arabes Unis</option>
+            <option value="uk">Royaume-Uni</option>
+            <option value="usa">Etats-Unis</option>
+        </select>
+    </form>
+    <script>
+        document.getElementById("pays").onchange = function() {
+            var selectedPays = this.value;
+            if (selectedPays) {
+                window.location.href = selectedPays + ".html";
+            }
+        };
+    </script>
+    </div>
+</body>
+</html>

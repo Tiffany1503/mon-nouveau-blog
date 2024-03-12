@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/pays.css' %}">
+    <title>Classement Irlande</title>
+</head>
+<body>
+    <h1>Classement Irlande</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Classement</th>
+                <th>Compagnie</th>
+                <th>Score AirHelp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>American Airlines</td>
+                <td>7,97</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>United Airlines</td>
+                <td>7,88</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Delta Air Lines</td>
+                <td>7,88</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="../ranking_by_country">Retour vers la page précédente</a>
+</body>
+</html>

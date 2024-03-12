@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/airline.css' %}">
+    <title>Classement mondial des compagnies aériennes</title>
+</head>
+<body>
+
+    <div class="tabs">
+        <a href="{% url 'airline_ranking' %}"><button>Classement complet</button></a>
+        <a href="{% url 'ranking_by_country' %}"><button>Classement par pays</button></a>
+    </div>
+    
+    <p>
+        Voici le top 10 des meilleures compagnies aériennes en 2023.<br>
+
+        Le classement suivant est établi selon le AirHelp Score et concerne l'année 2023. Le AirHelp Score est calculé selon la ponctualité, les avis clients et l'efficacité du service client.<br>
+
+        Vous pourrez aussi retrouver le classement complet ainsi que le top 3 par pays. 
+    </p>
+
+    <h1>Classement mondial des compagnies aériennes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Classement</th>
+                <th>Compagnie</th>
+                <th>Score AirHelp</th>
+                <th>Ponctualité</th>
+                <th>Avis client</th>
+                <th>Efficacité service client</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Qatar Airways</td>
+                <td>8,38</td>
+                <td>8,4</td>
+                <td>8,8</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>2</td>	
+                <td>Eurowings</td>
+                <td>8,27</td>
+                <td>9,3</td>
+                <td>7,5</td>
+                <td>8</td>				
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>LOT Polish Airlines</td>
+                <td>8,11</td>
+                <td>8,3</td>
+                <td>8,1</td>
+                <td>7,9</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Etihad Airways</td>
+                <td>8,09</td>
+                <td>8,4</td>
+                <td>8,7</td>
+                <td>7,2</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>All Nippon Airways</td>
+                <td>8,09</td>
+                <td>8,2</td>
+                <td>8,9</td>
+                <td>7,2</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Austrian Airlines</td>
+                <td>8,07</td>
+                <td>8,4</td>
+                <td>8,1</td>
+                <td>7,7</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>American Airlines</td>
+                <td>7,97</td>
+                <td>7,7</td>
+                <td>8,3</td>
+                <td>7,9</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>China Airlines</td>
+                <td>7,92</td>
+                <td>7,5</td>
+                <td>8,1</td>
+                <td>8,2</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Wideroe</td>
+                <td>7,89</td>
+                <td>8,5</td>
+                <td>7,7</td>
+                <td>7,5</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>United Airlines</td>
+                <td>7,88</td>
+                <td>7,5</td>
+                <td>8,1</td>
+                <td>8,1</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>

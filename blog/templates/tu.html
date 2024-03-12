@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/pays.css' %}">
+    <title>Classement Turquie</title>
+</head>
+<body>
+    <h1>Classement Turquie</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Classement</th>
+                <th>Compagnie</th>
+                <th>Score AirHelp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>SunExpress</td>
+                <td>6,52</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Turkish Airlines</td>
+                <td>6,46</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Jet2.com</td>
+                <td>6,02</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="../ranking_by_country">Retour vers la page précédente</a>
+</body>
+</html>

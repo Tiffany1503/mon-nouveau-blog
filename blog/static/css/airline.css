@@ -1,0 +1,48 @@
+h1 {
+    color: #010164;
+
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    text-align: center;
+}
+
+thead {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p {
+    border: 2px solid #010164; /* Bordure bleue de 2 pixels */
+    border-radius: 10px; /* Coins arrondis de rayon 10 pixels */
+    padding: 10px; /* Espacement à l'intérieur de la bordure */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #1a1a1a;
+}
+
+td {
+    border-bottom: 1px solid grey;
+    padding: 8px;
+}
+
+tbody tr:nth-child(1) {
+    background-color: #ffd700; /* Or pour la première place */
+}
+
+tbody tr:nth-child(2) {
+    background-color: #c0c0c0; /* Argent pour la deuxième place */
+}
+
+tbody tr:nth-child(3) {
+    background-color: #cd7f32; /* Bronze pour la troisième place */
+}
+
+tbody td:nth-child(1) {
+    font-weight: bold;
+}
